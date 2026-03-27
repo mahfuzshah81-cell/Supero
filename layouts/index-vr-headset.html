@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth" dir="ltr">
+    
+<!-- Mirrored from shreethemes.in/supero/layouts/index-vr-headset.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Feb 2026 07:36:39 GMT -->
+<head>
+        <meta charset="UTF-8" />
+        <title>Supero - Product Launching Landing Page Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta content="Real Estate Website Landing Page" name="description" />
+        <meta content="Real Estate, buy, sell, Rent, tailwind Css" name="keywords" />
+        <meta name="author" content="Shreethemes" />
+        <meta name="website" content="https://shreethemes.in/" />
+        <meta name="email" content="support@shreethemes.in" />
+        <meta name="version" content="1.0.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+        <!-- Css -->
+        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+        <!-- Main Css -->
+        <link href="assets/libs/remixicon/fonts/remixicon.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/animate.css/animate.min.html" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+
+    </head>
+    
+    <body class="dark:bg-slate-900">
+        <!-- Loader Start -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader End -->
+        <!-- TAGLINE START-->
+        <div class="tagline absolute w-full px-0 z-999 py-1.5! h-11 items-center text-sm bg-white dark:bg-slate-900">
+            <div class="container relative">                
+                <div class="grid grid-cols-1">
+                    <div class="flex items-center justify-between">
+                        <ul class="list-none">
+                            <li class="inline-flex items-center">
+                                <span class="text-slate-400"><i class="ri-time-line text-base text-primary me-1"></i> Mon-Sat: 9am to 6pm</span>
+                            </li>
+                            <li class="inline-flex items-center ms-2">
+                                <span class="text-slate-400"><i class="ri-map-pin-line text-base text-primary me-1"></i> Houston, USA 485</span>
+                            </li>
+                        </ul>
+                        
+                        <ul class="list-none">
+                            <li class="inline-flex items-center">
+                                <span class="text-slate-400"><i class="ri-mail-line text-base text-primary align-middle me-1"></i> <a href="mailto:contact@example.com" class="text-slate-400 hover:text-primary">contact@example.com</a></span>
+                            </li>
+                            <li class="inline-flex items-center ms-2">
+                                <ul class="list-none">
+                                    <li class="inline-flex mb-0"><a href="#!" class="text-slate-400 hover:text-primary text-base align-middle"><i class="ri-facebook-circle-line"></i></a></li>
+                                    <li class="inline-flex ms-2 mb-0"><a href="#!" class="text-slate-400 hover:text-primary text-base align-middle"><i class="ri-instagram-line"></i></a></li>
+                                    <li class="inline-flex ms-2 mb-0"><a href="#!" class="text-slate-400 hover:text-primary text-base align-middle"><i class="ri-twitter-x-line"></i></a></li>
+                                    <li class="inline-flex ms-2 mb-0"><a href="tel:+152534-468-854" class="text-slate-400 hover:text-primary text-base align-middle"><i class="ri-phone-line"></i></a></li>
+                                </ul><!--end icon-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--end container-->
+        </div><!--end tagline-->
+        <!-- TAGLINE END-->
+
+        <!-- Start Navbar -->
+        <nav id="topnav" class="defaultscroll is-sticky tagline-height">
+            <div class="container relative">
+                <!-- Start Logo container-->
+                <a class="logo" href="index.html">
+                    <span class="inline-block dark:hidden">
+                        <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
+                        <img src="assets/images/logo-light.png" class="l-light" height="24" alt="">
+                    </span>
+                    <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
+                </a>
+                <!-- End Logo container-->
+
+                <!-- Start Mobile Toggle -->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- End Mobile Toggle -->
+
+                <!--Login button Start-->
+                <ul class="buy-button list-none mb-0">
+                    <li class="dropdown inline-block relative pe-1">
+                        <button data-dropdown-toggle="dropdown" class="dropdown-toggle align-middle inline-flex search-dropdown" type="button">
+                            <i class="ri-search-line text-xl dark-icon"></i>
+                            <i class="ri-search-line text-xl white-icon text-white"></i>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu absolute overflow-hidden end-0 m-0 mt-5 z-10 md:w-52 w-48 rounded-md bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 hidden" onclick="event.stopPropagation();">
+                            <div class="relative">
+                                <i class="ri-search-line text-lg absolute top-1 end-3"></i>
+                                <input type="text" class="h-9 px-3 pe-10 w-full border-0 focus:ring-0 outline-none bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800" name="s" id="searchItem" placeholder="Search...">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="dropdown inline-block relative ps-0.5">
+                        <button data-dropdown-toggle="dropdown" class="dropdown-toggle size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-primary border border-primary text-white" type="button">
+                            <i class="ri-shopping-cart-2-line text-[18px] font-normal"></i>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu absolute end-0 m-0 mt-4 z-10 w-64 rounded-md bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 hidden" onclick="event.stopPropagation();">
+                            <ul class="py-3 text-start" aria-labelledby="dropdownDefault">
+                                <li>
+                                    <a href="#" class="flex items-center justify-between py-1.5 px-4">
+                                        <span class="flex items-center">
+                                            <img src="assets/images/shop/1.png" class="rounded shadow-sm dark:shadow-gray-800 w-9" alt="">
+                                            <span class="ms-3">
+                                                <span class="block text-sm mb-0.5 font-medium">Iphone</span>
+                                                <span class="block text-xs text-slate-400">$320 X 2</span>
+                                            </span>
+                                        </span>
+
+                                        <span class="text-sm font-medium">$640</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="flex items-center justify-between py-1.5 px-4">
+                                        <span class="flex items-center">
+                                            <img src="assets/images/shop/2.png" class="rounded shadow-sm dark:shadow-gray-800 w-9" alt="">
+                                            <span class="ms-3">
+                                                <span class="block text-sm mb-0.5 font-medium">Laptop</span>
+                                                <span class="block text-xs text-slate-400">$50 X 5</span>
+                                            </span>
+                                        </span>
+
+                                        <span class="text-sm font-medium">$250</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="flex items-center justify-between py-1.5 px-4">
+                                        <span class="flex items-center">
+                                            <img src="assets/images/shop/3.png" class="rounded shadow-sm dark:shadow-gray-800 w-9" alt="">
+                                            <span class="ms-3">
+                                                <span class="block text-sm mb-0.5 font-medium">Red Headphone</span>
+                                                <span class="block text-xs text-slate-400">$800 X 1</span>
+                                            </span>
+                                        </span>
+
+                                        <span class="text-sm font-medium">$800</span>
+                                    </a>
+                                </li>
+
+                                <li class="border-t border-gray-100 dark:border-gray-800 my-2"></li>
+
+                                <li class="flex items-center justify-between py-1.5 px-4">
+                                    <h6 class="font-semibold mb-0">Total($):</h6>
+                                    <h6 class="font-semibold mb-0">$1690</h6>
+                                </li>
+
+                                <li class="py-1.5 px-4">
+                                    <span class="text-center block">
+                                        <a href="javascript:void(0)" class="py-1.25 w-[49%] inline-block font-semibold tracking-wide align-middle duration-500 text-sm text-center rounded-md bg-primary border border-primary text-white">View Cart</a>
+                                        <a href="javascript:void(0)" class="py-1.25 w-[49%] inline-block font-semibold tracking-wide align-middle duration-500 text-sm text-center rounded-md bg-primary border border-primary text-white">Checkout</a>
+                                    </span>
+                                    <p class="text-xs text-slate-400 mt-1">*T&C Apply</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="inline-block ps-0.5">
+                        <a href="wishlists.html" class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-primary text-white">
+                            <i class="ri-heart-line text-[18px] font-normal"></i>
+                        </a>
+                    </li>
+    
+                    <li class="dropdown inline-block relative ps-0.5">
+                        <button data-dropdown-toggle="dropdown" class="dropdown-toggle items-center" type="button">
+                            <span class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-primary bg-primary text-white"><img src="assets/images/client/16.jpg" class="rounded-full" alt=""></span>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu absolute end-0 m-0 mt-4 z-10 w-48 rounded-md overflow-hidden bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-700 hidden" onclick="event.stopPropagation();">
+                            <ul class="py-2 text-start">
+                                <li>
+                                    <p class="text-slate-400 pt-2 px-4">Welcome Jesus!</p>
+                                </li>
+                                <li>
+                                    <p class="flex items-center font-medium py-2 px-4"><i class="ri-money-dollar-circle-line text-[18px] font-normal me-2"></i> Balance: <span class="text-primary ms-2">$ 245.10</span></p>
+                                </li>
+                                <li>
+                                    <a href="user-account.html" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-primary dark:hover:text-white"><i class="ri-user-line text-[18px] font-normal me-2"></i>Account</a>
+                                </li>
+                                <li>
+                                    <a href="helpcenter.html" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-primary dark:hover:text-white"><i class="ri-question-line text-[18px] font-normal me-2"></i>Helpcenter</a>
+                                </li>
+                                <li>
+                                    <a href="user-setting.html" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-primary dark:hover:text-white"><i class="ri-settings-5-line text-[18px] font-normal me-2"></i>Settings</a>
+                                </li>
+                                <li class="border-t border-gray-100 dark:border-gray-800 my-2"></li>
+                                <li>
+                                    <a href="login.html" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-primary dark:hover:text-white"><i class="ri-login-circle-line text-[18px] font-normal me-2"></i>Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li><!--end dropdown-->
+                </ul>
+                <!--Login button End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu justify-end! nav-light">
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Home</a><span class="menu-arrow"></span>
+
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="index.html" class="sub-menu-item">
+                                                <div class="lg:text-center">
+                                                    <span class="none lg:block"><img src="assets/images/demos/air-fryer.png" class="img-fluid rounded shadow-md" alt=""></span>
+                                                    <span class="lg:mt-2 block">Air Fryer</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="index-refrigerator.html" class="sub-menu-item">
+                                                <div class="lg:text-center">
+                                                    <span class="none lg:block"><img src="assets/images/demos/refrigerator.png" class="img-fluid rounded shadow-md" alt=""></span>
+                                                    <span class="lg:mt-2 block">Refrigerator</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="index-vr-headset.html" class="sub-menu-item">
+                                                <div class="lg:text-center">
+                                                    <span class="none lg:block"><img src="assets/images/demos/vr-headset.png" class="img-fluid rounded shadow-md" alt=""></span>
+                                                    <span class="lg:mt-2 block">VR Headset</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+        
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="index-washing-machine.html" class="sub-menu-item">
+                                                <div class="lg:text-center">
+                                                    <span class="none lg:block"><img src="assets/images/demos/washing-machine.png" class="img-fluid rounded shadow-md" alt=""></span>
+                                                    <span class="lg:mt-2 block">Washing Machine</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+        
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="index-portable-speaker.html" class="sub-menu-item">
+                                                <div class="lg:text-center">
+                                                    <span class="none lg:block"><img src="assets/images/demos/portable-speaker.png" class="img-fluid rounded shadow-md" alt=""></span>
+                                                    <span class="lg:mt-2 block">Portable Speaker</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-parent-menu-item"><a href="javascript:void(0)"> Shop </a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="shop.html" class="sub-menu-item">Shop Items</a></li>
+                                <li><a href="shop-left-sidebar.html" class="sub-menu-item">Shop - Left Sidebar</a></li>
+                                <li><a href="shop-right-sidebar.html" class="sub-menu-item">Shop - Right Sidebar</a></li>
+
+                                <li class="has-submenu parent-menu-item">
+                                    <a href="javascript:void(0)"> Shop Detail </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="product-detail-one.html" class="sub-menu-item">Product Detail One</a></li>
+                                        <li><a href="product-detail-two.html" class="sub-menu-item">Product Detail Two</a></li>
+                                        <li><a href="product-detail-three.html" class="sub-menu-item">Product Detail Three</a></li>
+                                    </ul>  
+                                </li>
+                                <li><a href="shop-cart.html" class="sub-menu-item">Shop Cart</a></li>
+                                <li><a href="shop-checkout.html" class="sub-menu-item">Checkout</a></li>
+                                <li><a href="wishlists.html" class="sub-menu-item">Wishlists</a></li>
+                            </ul>
+                        </li>
+        
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>
+
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> My Account</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="user-account.html" class="sub-menu-item">User Account</a></li>
+                                        <li><a href="user-billing.html" class="sub-menu-item">Billing</a></li>
+                                        <li><a href="user-payment.html" class="sub-menu-item">Payment</a></li>
+                                        <li><a href="user-invoice.html" class="sub-menu-item">Invoice</a></li>
+                                        <li><a href="user-social.html" class="sub-menu-item">Social</a></li>
+                                        <li><a href="user-notification.html" class="sub-menu-item">Notification</a></li>
+                                        <li><a href="user-setting.html" class="sub-menu-item">Setting</a></li>
+                                    </ul> 
+                                </li>
+                
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Blogs </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="blogs.html" class="sub-menu-item"> Blogs</a></li>
+                                        <li><a href="blog-detail.html" class="sub-menu-item"> Blog Detail</a></li>
+                                    </ul> 
+                                </li>
+
+                                <li class="has-submenu parent-menu-item">
+                                    <a href="javascript:void(0)"> Helpcenter </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="helpcenter.html" class="sub-menu-item">Overview</a></li>
+                                        <li><a href="helpcenter-faqs.html" class="sub-menu-item">FAQs</a></li>
+                                        <li><a href="helpcenter-guides.html" class="sub-menu-item">Guides</a></li>
+                                        <li><a href="helpcenter-support.html" class="sub-menu-item">Support</a></li>
+                                    </ul>  
+                                </li>
+
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Auth Pages </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="login.html" class="sub-menu-item"> Login</a></li>
+                                        <li><a href="signup.html" class="sub-menu-item"> Signup</a></li>
+                                        <li><a href="forgot-password.html" class="sub-menu-item"> Forgot Password</a></li>
+                                        <li><a href="lock-screen.html" class="sub-menu-item"> Lock Screen</a></li>
+                                    </ul> 
+                                </li>
+
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Utility </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="terms.html" class="sub-menu-item">Terms of Services</a></li>
+                                        <li><a href="privacy.html" class="sub-menu-item">Privacy Policy</a></li>
+                                    </ul>  
+                                </li>
+
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Special </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="comingsoon.html" class="sub-menu-item"> Coming Soon</a></li>
+                                        <li><a href="maintenance.html" class="sub-menu-item"> Maintenance</a></li>
+                                        <li><a href="error.html" class="sub-menu-item"> 404!</a></li>
+                                    </ul> 
+                                </li>
+
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Multi Level Menu</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="javascript:void(0)" class="sub-menu-item">Level 1.0</a></li>
+                                        <li class="has-submenu child-menu-item"><a href="javascript:void(0)"> Level 2.0 </a><span class="submenu-arrow"></span>
+                                            <ul class="submenu">
+                                                <li><a href="javascript:void(0)" class="sub-menu-item">Level 2.1</a></li>
+                                                <li><a href="javascript:void(0)" class="sub-menu-item">Level 2.2</a></li>
+                                            </ul>  
+                                        </li>
+                                    </ul>  
+                                </li>
+                            </ul>
+                        </li>
+                
+                        <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </nav><!--end header-->
+        <!-- End Navbar -->
+
+        <!-- Searchbar modal -->
+        <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl m-auto mt-20">
+            <div class="relative w-full h-auto">
+                <form method="dialog" class="modal-backdrop">
+                    <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost"><i class="ri-close-line"></i></button>
+                </form>
+                <div class="p-6 text-center">
+                    <form class="relative">
+                        <i class="ri-search-line text-lg absolute top-2 end-0"></i>
+                        <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10" name="s" id="searchItem" placeholder="Search...">
+                    </form>
+                </div>
+            </div>
+        </dialog>
+        <!-- Searchbar modal -->
+
+        <!-- Hero Start -->
+        <section class="relative md:h-screen flex items-center md:py-0 py-36 bg-[url('../../assets/images/vr/bg.html')] bg-center bg-no-repeat bg-fixed bg-cover jarallax" data-jarallax data-speed="0.5">
+            <div class="absolute inset-0 bg-slate-900/20"></div>
+            <div class="container relative">
+                <div class="relative grid grid-cols-1 items-center mt-10">
+                    <div class="">
+                        <h1 class="font-bold lg:leading-normal leading-normal text-white text-4xl lg:text-7xl mb-5">Get Ready For <br> <span class="bg-linear-to-tl to-primary from-red-500 text-transparent bg-clip-text">VR Revolution</span></h1>
+                        <p class="text-white/60 text-lg max-w-xl lg:ms-0 mx-auto">Discover actionable VR Headset export import data with Supero advanced trade platform.</p>
+                    
+                        <p class="text-white font-medium mt-6">Starting at</p>
+                        <span class="bg-linear-to-tl to-primary from-red-500 text-transparent bg-clip-text text-3xl font-bold">$ 299</span>
+                    </div><!--end col-->
+                </div>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Start -->
+        <section class="relative md:py-24 py-16">
+            <div class="container relative">
+                <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
+                    <div class="md:col-span-5">
+                        <div class="relative">
+                            <div class="relative md:shrink-0">
+                                <img class="object-cover md:w-100 w-84 lg:h-137.5 md:h-100 h-137.5 rounded-md shadow-md dark:shadow-gyay-800 ms-auto" src="assets/images/vr/ab1.jpg" alt="">
+                            </div>
+    
+                            <div class="absolute bottom-16 md:-start-10 md-start-5 start-1 flex items-center p-2 rounded shadow-md dark:shadow-gray-800 bg-white/90 dark:bg-slate-900/90 max-w-80">
+                                <div class="min-w-36 w-36 relative">
+                                    <div class="grid grid-cols-1">
+                                        <div class="tiny-one-item">
+                                            <div class="tiny-slide">
+                                                <img src="assets/images/vr/1.jpg" class="rounded" alt="">
+                                            </div>
+        
+                                            <div class="tiny-slide">
+                                                <img src="assets/images/vr/2.jpg" class="rounded" alt="">
+                                            </div>
+        
+                                            <div class="tiny-slide">
+                                                <img src="assets/images/vr/4.jpg" class="rounded" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="md:col-span-7">
+                        <div class="lg:ms-4">
+                            <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">The Future Is Closer <br> Then You Think</h4>
+                            <p class="text-slate-400 max-w-xl">The Virtual reality headset export import data sector contributes significantly to the overall GDP percentage of India. We comprehend the fact that the majority of import firms are active in sourcing a wide range of goods, including raw materials, machinery, consumer goods, etc. Hence, we provide comprehensive Virtual reality headset shipment data solutions as well as export data solutions for broad categories of import trading firms and export trading firms too.</p>
+                            <div class="mt-6">
+                                <a href="#" class="py-2 px-5 inline-block font-semibold tracking-wide align-middle duration-500 text-base text-center bg-primary text-white rounded-md">Read More <i class="ri-arrow-right-fill align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="container relative md:mt-24 mt-16">
+                <div class="grid grid-cols-1 pb-6 text-center">
+                    <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Redefining VR Quality</h3>
+
+                    <p class="text-slate-400 max-w-xl mx-auto">Discover actionable VR Headset export import data with Supero advanced trade platform.</p>
+                </div><!--end grid-->
+
+                <div class="grid lg:grid-cols-12 grid-cols-1 items-center mt-6 gap-6">
+                    <div class="lg:col-span-4">
+                        <div class="grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-6">
+                            <!-- Content -->
+                            <div class="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
+                                <div class="relative overflow-hidden text-transparent -m-3">
+                                    <i class="ri-hexagon-fill text-9xl text-primary/5 mx-auto"></i>
+                                    <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-primary rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
+                                        <i class="ri-cpu-line"></i>
+                                    </div>
+                                </div>
+
+                                <div class="mt-6">
+                                    <a href="#" class="text-xl hover:text-primary font-medium">Powerful Platform</a>
+                                    <p class="text-slate-400 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                                </div>
+                            </div>
+                            <!-- Content -->
+
+                            <!-- Content -->
+                            <div class="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
+                                <div class="relative overflow-hidden text-transparent -m-3">
+                                    <i class="ri-hexagon-fill text-9xl text-primary/5 mx-auto"></i>
+                                    <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-primary rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
+                                        <i class="ri-wifi-line"></i>
+                                    </div>
+                                </div>
+
+                                <div class="mt-6">
+                                    <a href="#" class="text-xl hover:text-primary font-medium">Wireless Connectivity</a>
+                                    <p class="text-slate-400 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                                </div>
+                            </div>
+                            <!-- Content -->
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="lg:col-span-4">
+                        <div class="rounded-full shadow-lg dark:shadow-gray-800 relative overflow-hidden border-8 border-white dark:border-slate-900">
+                            <div class="grid grid-cols-1 relative">
+                                <img src="assets/images/vr/ab2.jpg" class="object-cover w-full lg:h-150 md:h-96 h-125" alt="">
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="lg:col-span-4">
+                        <div class="grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-6">
+                            <!-- Content -->
+                            <div class="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
+                                <div class="relative overflow-hidden text-transparent -m-3">
+                                    <i class="ri-hexagon-fill text-9xl text-primary/5 mx-auto"></i>
+                                    <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-primary rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
+                                        <i class="ri-cast-line"></i>
+                                    </div>
+                                </div>
+
+                                <div class="mt-6">
+                                    <a href="#" class="text-xl hover:text-primary font-medium">High-resolution Display</a>
+                                    <p class="text-slate-400 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                                </div>
+                            </div>
+                            <!-- Content -->
+                            
+                            <!-- Content -->
+                            <div class="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
+                                <div class="relative overflow-hidden text-transparent -m-3">
+                                    <i class="ri-hexagon-fill text-9xl text-primary/5 mx-auto"></i>
+                                    <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-primary rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
+                                        <i class="ri-eye-2-line"></i>
+                                    </div>
+                                </div>
+
+                                <div class="mt-6">
+                                    <a href="#" class="text-xl hover:text-primary font-medium">Eye Tracking</a>
+                                    <p class="text-slate-400 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                                </div>
+                            </div>
+                            <!-- Content -->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="container relative md:mt-24 mt-16">
+                <div class="grid grid-cols-1 pb-6 text-center">
+                    <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Our Products</h3>
+
+                    <p class="text-slate-400 max-w-xl mx-auto">Discover actionable VR Headset export import data with Supero advanced trade platform.</p>
+                </div><!--end grid-->
+
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
+                    <div class="group">
+                        <div class="relative overflow-hidden shadow-sm dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
+                            <img src="assets/images/vr/1.jpg" class="group-hover:scale-110 duration-500" alt="">
+    
+                            <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                <a href="shop-cart.html" class="py-2 px-5 inline-block font-semibold tracking-wide align-middle duration-500 text-base text-center bg-slate-900 text-white w-full rounded-full">Add to Cart</a>
+                            </div>
+    
+                            <ul class="list-none absolute top-2.5 end-4 opacity-0 group-hover:opacity-100 duration-500 space-y-1">
+                                <li><a href="javascript:void(0)" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-heart-line"></i></a></li>
+                                <li class="mt-1"><a href="product-detail-one.html" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-eye-line"></i></a></li>
+                                <li class="mt-1"><a href="javascript:void(0)" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-bookmark-line"></i></a></li>
+                            </ul>
+
+                            <ul class="list-none absolute top-2.5 start-4">
+                                <li><a href="javascript:void(0)" class="bg-primary text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5">-40% Off</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="product-detail-one.html" class="hover:text-primary text-lg font-medium">Meta Quest 3S</a>
+                            <div class="flex justify-between items-center mt-1">
+                                <p>$ 299</p>
+                                <ul class="font-medium text-amber-400 list-none">
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div class="group">
+                        <div class="relative overflow-hidden shadow-sm dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
+                            <img src="assets/images/vr/2.jpg" class="group-hover:scale-110 duration-500" alt="">
+    
+                            <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                <a href="shop-cart.html" class="py-2 px-5 inline-block font-semibold tracking-wide align-middle duration-500 text-base text-center bg-slate-900 text-white w-full rounded-full">Add to Cart</a>
+                            </div>
+    
+                            <ul class="list-none absolute top-2.5 end-4 opacity-0 group-hover:opacity-100 duration-500 space-y-1">
+                                <li><a href="javascript:void(0)" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-heart-line"></i></a></li>
+                                <li class="mt-1"><a href="product-detail-one.html" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-eye-line"></i></a></li>
+                                <li class="mt-1"><a href="javascript:void(0)" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-bookmark-line"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="product-detail-one.html" class="hover:text-primary text-lg font-medium">Irusu Play VR Ultra</a>
+                            <div class="flex justify-between items-center mt-1">
+                                <p>$ 299</p>
+                                <ul class="font-medium text-amber-400 list-none">
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div class="group">
+                        <div class="relative overflow-hidden shadow-sm dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
+                            <img src="assets/images/vr/3.jpg" class="group-hover:scale-110 duration-500" alt="">
+    
+                            <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                <a href="shop-cart.html" class="py-2 px-5 inline-block font-semibold tracking-wide align-middle duration-500 text-base text-center bg-slate-900 text-white w-full rounded-full">Add to Cart</a>
+                            </div>
+    
+                            <ul class="list-none absolute top-2.5 end-4 opacity-0 group-hover:opacity-100 duration-500 space-y-1">
+                                <li><a href="javascript:void(0)" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-heart-line"></i></a></li>
+                                <li class="mt-1"><a href="product-detail-one.html" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-eye-line"></i></a></li>
+                                <li class="mt-1"><a href="javascript:void(0)" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-bookmark-line"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="product-detail-one.html" class="hover:text-primary text-lg font-medium">ROCKTECH VR Headset</a>
+                            <div class="flex justify-between items-center mt-1">
+                                <p>$ 299</p>
+                                <ul class="font-medium text-amber-400 list-none">
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div class="group">
+                        <div class="relative overflow-hidden shadow-sm dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
+                            <img src="assets/images/vr/4.jpg" class="group-hover:scale-110 duration-500" alt="">
+    
+                            <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                <a href="shop-cart.html" class="py-2 px-5 inline-block font-semibold tracking-wide align-middle duration-500 text-base text-center bg-slate-900 text-white w-full rounded-full">Add to Cart</a>
+                            </div>
+    
+                            <ul class="list-none absolute top-2.5 end-4 opacity-0 group-hover:opacity-100 duration-500 space-y-1">
+                                <li><a href="javascript:void(0)" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-heart-line"></i></a></li>
+                                <li class="mt-1"><a href="product-detail-one.html" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-eye-line"></i></a></li>
+                                <li class="mt-1"><a href="javascript:void(0)" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-bookmark-line"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="product-detail-one.html" class="hover:text-primary text-lg font-medium">Arcnet V5 VR Headset</a>
+                            <div class="flex justify-between items-center mt-1">
+                                <p>$ 299</p>
+                                <ul class="font-medium text-amber-400 list-none">
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div class="group">
+                        <div class="relative overflow-hidden shadow-sm dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
+                            <img src="assets/images/vr/5.jpg" class="group-hover:scale-110 duration-500" alt="">
+    
+                            <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                <a href="shop-cart.html" class="py-2 px-5 inline-block font-semibold tracking-wide align-middle duration-500 text-base text-center bg-slate-900 text-white w-full rounded-full">Add to Cart</a>
+                            </div>
+    
+                            <ul class="list-none absolute top-2.5 end-4 opacity-0 group-hover:opacity-100 duration-500 space-y-1">
+                                <li><a href="javascript:void(0)" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-heart-line"></i></a></li>
+                                <li class="mt-1"><a href="product-detail-one.html" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-eye-line"></i></a></li>
+                                <li class="mt-1"><a href="javascript:void(0)" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-bookmark-line"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="product-detail-one.html" class="hover:text-primary text-lg font-medium">Procus One VR Box</a>
+                            <div class="flex justify-between items-center mt-1">
+                                <p>$ 299</p>
+                                <ul class="font-medium text-amber-400 list-none">
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div class="group">
+                        <div class="relative overflow-hidden shadow-sm dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md duration-500">
+                            <img src="assets/images/vr/6.jpg" class="group-hover:scale-110 duration-500" alt="">
+    
+                            <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                <a href="shop-cart.html" class="py-2 px-5 inline-block font-semibold tracking-wide align-middle duration-500 text-base text-center bg-slate-900 text-white w-full rounded-full">Add to Cart</a>
+                            </div>
+    
+                            <ul class="list-none absolute top-2.5 end-4 opacity-0 group-hover:opacity-100 duration-500 space-y-1">
+                                <li><a href="javascript:void(0)" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-heart-line"></i></a></li>
+                                <li class="mt-1"><a href="product-detail-one.html" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-eye-line"></i></a></li>
+                                <li class="mt-1"><a href="javascript:void(0)" class="size-9 inline-flex items-center justify-center tracking-wide text-[18px] align-middle duration-500 text-center rounded-full bg-white text-slate-900 hover:bg-slate-900 hover:text-white shadow"><i class="ri-bookmark-line"></i></a></li>
+                            </ul>
+
+                            <ul class="list-none absolute top-2.5 start-4">
+                                <li><a href="javascript:void(0)" class="bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5">Featured</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="product-detail-one.html" class="hover:text-primary text-lg font-medium">Oculus Meta Quest Pro VR</a>
+                            <div class="flex justify-between items-center mt-1">
+                                <p>$ 299</p>
+                                <ul class="font-medium text-amber-400 list-none">
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-fill"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="container relative md:mt-24 mt-16">
+                <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
+                    <div class="lg:col-span-5 md:col-span-5">
+                        <div class="relative rounded-xl overflow-hidden shadow-md dark:shadow-gray-800">
+                            <div class="w-full py-72 bg-slate-400 bg-[url('../../assets/images/vr/bg2.html')] bg-no-repeat jarallax" data-jarallax data-speed="0.5"></div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="lg:col-span-7 md:col-span-7 lg:ms-8">
+                        <h4 class="mb-4 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Questions & Answers</h4>
+                        <p class="text-slate-400 max-w-xl">Upgrade your style with our curated sets. Choose confidence, embrace your unique look.</p>
+
+                        <div id="accordion-collapseone" data-accordion="collapse" class="mt-6">
+                            <div class="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden">
+                                <h2 class="font-medium" id="accordion-collapse-heading-1">
+                                    <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                                        <span>How does it work ?</span>
+                                        <svg data-accordion-icon class="size-5 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                                    <div class="p-5">
+                                        <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
+                                <h2 class="font-medium" id="accordion-collapse-heading-2">
+                                    <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                                        <span>Do I need a designer to use Supero ?</span>
+                                        <svg data-accordion-icon class="size-5 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                                    <div class="p-5">
+                                        <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
+                                <h2 class="font-medium" id="accordion-collapse-heading-3">
+                                    <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                                        <span>What do I need to do to start selling ?</span>
+                                        <svg data-accordion-icon class="size-5 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                                    <div class="p-5">
+                                        <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
+                                <h2 class="font-medium" id="accordion-collapse-heading-4">
+                                    <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-4">
+                                        <span>What happens when I receive an order ?</span>
+                                        <svg data-accordion-icon class="size-5 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+                                    <div class="p-5">
+                                        <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="container relative md:mt-24 mt-16">
+                <div class="grid grid-cols-1 text-center">
+                    <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Have Question ? Get in touch!</h3>
+
+                    <p class="text-slate-400 max-w-xl mx-auto">Upgrade your style with our curated sets. Choose confidence, embrace your unique look.</p>
+                
+                    <div class="mt-6">
+                        <a href="contactus.html" class="py-2 px-5 inline-flex items-center font-semibold tracking-wide align-middle duration-500 text-base text-center bg-primary text-white rounded-md me-2 mt-2"><i class="ri-phone-line me-1"></i> Contact us</a>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Start Footer -->
+        <footer class="relative bg-slate-900 dark:bg-slate-800">
+            <div class="container relative">
+                <div class="grid grid-cols-1">
+                    <div class="relative py-16">
+                        <!-- Subscribe -->
+                        <div class="relative w-full">
+                            <div class="md:flex justify-between">
+                                <div class="lg:w-2/6 md:w-1/2">
+                                    <a href="#" class="text-[22px] focus:outline-none">
+                                        <img src="assets/images/logo-light.png" alt="">
+                                    </a>
+                                    <p class="mt-6 text-gray-300">Supero is a really creative & modern product landing page template built with tailwind css.</p>
+
+                                    <ul class="list-none mt-6">
+                                        <li class="inline"><a href="https://1.envato.market/supero" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-shopping-cart-2-line"></i></a></li>
+                                        <li class="inline"><a href="https://dribbble.com/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-dribbble-line"></i></a></li>
+                                        <li class="inline"><a href="https://www.behance.net/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-behance-line"></i></a></li>
+                                        <li class="inline"><a href="http://linkedin.com/company/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-linkedin-line"></i></a></li>
+                                        <li class="inline"><a href="https://www.facebook.com/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-facebook-circle-line"></i></a></li>
+                                        <li class="inline"><a href="https://www.instagram.com/shreethemes/" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-instagram-line"></i></a></li>
+                                        <li class="inline"><a href="https://twitter.com/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-twitter-x-line"></i></a></li>
+                                        <li class="inline"><a href="mailto:support@shreethemes.in" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-mail-line"></i></a></li>
+                                    </ul><!--end icon-->
+                                </div><!--end col-->
+                        
+                                <div class="lg:w-2/6 md:w-1/2 w-full">
+                                    <div class="grid grid-cols-2 md:mt-0 mt-6 gap-6">
+                                        <div class="">
+                                            <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Services</h5>
+                                    
+                                            <ul class="list-none footer-list mt-6">
+                                                <li><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Installation</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Maintenance</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">System Design</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Energy Consulting</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Financing</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Feasibility Analysis</a></li>
+                                            </ul>
+                                        </div><!--end col-->
+                                
+                                        <div class="">
+                                            <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Company</h5>
+
+                                            <ul class="list-none footer-list mt-6">
+                                                <li><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">About Us</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Services</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Projects</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Blogs</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Team</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">FAQs</a></li>
+                                            </ul>
+                                        </div><!--end col-->
+                                    </div>
+                                </div>
+                            </div><!--end grid-->
+                        </div>
+                        <!-- Subscribe -->
+                    </div>
+                </div>
+            </div><!--end container-->
+
+            <div class="py-7.5 px-0 border-t border-gray-800 dark:border-gray-700">
+                <div class="container relative text-center">
+                    <div class="grid md:grid-cols-2 items-center gap-6">
+                        <div class="md:text-start text-center">
+                            <p class="mb-0 text-gray-300">© <script>document.write(new Date().getFullYear())</script> Supero. Design with <i class="ri-heart-fill text-red-600"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                        </div>
+
+                        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top rounded-md z-10 size-8 bg-primary text-white flex justify-center items-center md:ms-auto md:mx-0 mx-auto"><i class="ri-arrow-up-line"></i></a>
+                    </div><!--end grid-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- End Footer -->
+        <!-- Switcher -->
+        <div class="fixed top-1/4 -right-2 z-3">
+            <span class="relative inline-block rotate-90">
+                <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
+                <label class="label bg-slate-900 dark:bg-white shadow-sm dark:shadow-gray-700 cursor-pointer rounded-full flex justify-between items-center p-1 w-15 h-8" for="chk">
+                    <i class="ri-moon-line text-yellow-500 ps-1 relative z-1"></i>
+                    <i class="ri-sun-line text-yellow-500 pe-1 relative z-1"></i>
+                    <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-0.5 left-0.5 size-7"></span>
+                </label>
+            </span>
+        </div>
+        <!-- Switcher -->
+
+        <!-- LTR & RTL Mode Code -->
+        <div class="fixed top-[40%] -right-3 z-50">
+            <a href="#" id="switchRtl">
+                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-sm shadow-gray-800 dark:shadow-gray-200 font-semibold rtl:block ltr:hidden" >LTR</span>
+                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-sm shadow-gray-800 dark:shadow-gray-200 font-semibold ltr:block rtl:hidden">RTL</span>
+            </a>
+        </div>
+        <!-- LTR & RTL Mode Code -->
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/jarallax/jarallax.min.js"></script>
+        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+        <script src="assets/libs/tobii/js/tobii.min.js"></script>
+        <script src="assets/libs/wow.js/wow.min.html"></script>
+        <script src="assets/js/plugins.init.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!-- JAVASCRIPTS -->
+    </body>
+
+<!-- Mirrored from shreethemes.in/supero/layouts/index-vr-headset.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Feb 2026 07:36:42 GMT -->
+</html>

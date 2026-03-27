@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth" dir="ltr">
+    
+<!-- Mirrored from shreethemes.in/supero/layouts/aboutus.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Feb 2026 07:36:57 GMT -->
+<head>
+        <meta charset="UTF-8" />
+        <title>Supero - Product Launching Landing Page Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta content="Real Estate Website Landing Page" name="description" />
+        <meta content="Real Estate, buy, sell, Rent, tailwind Css" name="keywords" />
+        <meta name="author" content="Shreethemes" />
+        <meta name="website" content="https://shreethemes.in/" />
+        <meta name="email" content="support@shreethemes.in" />
+        <meta name="version" content="1.0.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+        <!-- Css -->
+        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+        <!-- Main Css -->
+        <link href="assets/libs/remixicon/fonts/remixicon.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/animate.css/animate.min.html" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+
+    </head>
+    
+    <body class="dark:bg-slate-900">
+        <!-- Loader Start -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader End -->
+        <!-- Start Navbar -->
+        <nav id="topnav" class="defaultscroll is-sticky">
+            <div class="container relative">
+                <!-- Start Logo container-->
+                <a class="logo" href="index.html">
+                    <span class="inline-block dark:hidden">
+                        <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
+                        <img src="assets/images/logo-light.png" class="l-light" height="24" alt="">
+                    </span>
+                    <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
+                </a>
+                <!-- End Logo container-->
+
+                <!-- Start Mobile Toggle -->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- End Mobile Toggle -->
+
+                <!--Login button Start-->
+                <ul class="buy-button list-none mb-0">
+                    <li class="dropdown inline-block relative pe-1">
+                        <button data-dropdown-toggle="dropdown" class="dropdown-toggle align-middle inline-flex search-dropdown" type="button">
+                            <i class="ri-search-line text-xl dark-icon"></i>
+                            <i class="ri-search-line text-xl white-icon text-white"></i>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu absolute overflow-hidden end-0 m-0 mt-5 z-10 md:w-52 w-48 rounded-md bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 hidden" onclick="event.stopPropagation();">
+                            <div class="relative">
+                                <i class="ri-search-line text-lg absolute top-1 end-3"></i>
+                                <input type="text" class="h-9 px-3 pe-10 w-full border-0 focus:ring-0 outline-none bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800" name="s" id="searchItem" placeholder="Search...">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="dropdown inline-block relative ps-0.5">
+                        <button data-dropdown-toggle="dropdown" class="dropdown-toggle size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-primary border border-primary text-white" type="button">
+                            <i class="ri-shopping-cart-2-line text-[18px] font-normal"></i>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu absolute end-0 m-0 mt-4 z-10 w-64 rounded-md bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 hidden" onclick="event.stopPropagation();">
+                            <ul class="py-3 text-start" aria-labelledby="dropdownDefault">
+                                <li>
+                                    <a href="#" class="flex items-center justify-between py-1.5 px-4">
+                                        <span class="flex items-center">
+                                            <img src="assets/images/shop/1.png" class="rounded shadow-sm dark:shadow-gray-800 w-9" alt="">
+                                            <span class="ms-3">
+                                                <span class="block text-sm mb-0.5 font-medium">Iphone</span>
+                                                <span class="block text-xs text-slate-400">$320 X 2</span>
+                                            </span>
+                                        </span>
+
+                                        <span class="text-sm font-medium">$640</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="flex items-center justify-between py-1.5 px-4">
+                                        <span class="flex items-center">
+                                            <img src="assets/images/shop/2.png" class="rounded shadow-sm dark:shadow-gray-800 w-9" alt="">
+                                            <span class="ms-3">
+                                                <span class="block text-sm mb-0.5 font-medium">Laptop</span>
+                                                <span class="block text-xs text-slate-400">$50 X 5</span>
+                                            </span>
+                                        </span>
+
+                                        <span class="text-sm font-medium">$250</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="flex items-center justify-between py-1.5 px-4">
+                                        <span class="flex items-center">
+                                            <img src="assets/images/shop/3.png" class="rounded shadow-sm dark:shadow-gray-800 w-9" alt="">
+                                            <span class="ms-3">
+                                                <span class="block text-sm mb-0.5 font-medium">Red Headphone</span>
+                                                <span class="block text-xs text-slate-400">$800 X 1</span>
+                                            </span>
+                                        </span>
+
+                                        <span class="text-sm font-medium">$800</span>
+                                    </a>
+                                </li>
+
+                                <li class="border-t border-gray-100 dark:border-gray-800 my-2"></li>
+
+                                <li class="flex items-center justify-between py-1.5 px-4">
+                                    <h6 class="font-semibold mb-0">Total($):</h6>
+                                    <h6 class="font-semibold mb-0">$1690</h6>
+                                </li>
+
+                                <li class="py-1.5 px-4">
+                                    <span class="text-center block">
+                                        <a href="javascript:void(0)" class="py-1.25 w-[49%] inline-block font-semibold tracking-wide align-middle duration-500 text-sm text-center rounded-md bg-primary border border-primary text-white">View Cart</a>
+                                        <a href="javascript:void(0)" class="py-1.25 w-[49%] inline-block font-semibold tracking-wide align-middle duration-500 text-sm text-center rounded-md bg-primary border border-primary text-white">Checkout</a>
+                                    </span>
+                                    <p class="text-xs text-slate-400 mt-1">*T&C Apply</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="inline-block ps-0.5">
+                        <a href="wishlists.html" class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-primary text-white">
+                            <i class="ri-heart-line text-[18px] font-normal"></i>
+                        </a>
+                    </li>
+    
+                    <li class="dropdown inline-block relative ps-0.5">
+                        <button data-dropdown-toggle="dropdown" class="dropdown-toggle items-center" type="button">
+                            <span class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-primary bg-primary text-white"><img src="assets/images/client/16.jpg" class="rounded-full" alt=""></span>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu absolute end-0 m-0 mt-4 z-10 w-48 rounded-md overflow-hidden bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-700 hidden" onclick="event.stopPropagation();">
+                            <ul class="py-2 text-start">
+                                <li>
+                                    <p class="text-slate-400 pt-2 px-4">Welcome Jesus!</p>
+                                </li>
+                                <li>
+                                    <p class="flex items-center font-medium py-2 px-4"><i class="ri-money-dollar-circle-line text-[18px] font-normal me-2"></i> Balance: <span class="text-primary ms-2">$ 245.10</span></p>
+                                </li>
+                                <li>
+                                    <a href="user-account.html" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-primary dark:hover:text-white"><i class="ri-user-line text-[18px] font-normal me-2"></i>Account</a>
+                                </li>
+                                <li>
+                                    <a href="helpcenter.html" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-primary dark:hover:text-white"><i class="ri-question-line text-[18px] font-normal me-2"></i>Helpcenter</a>
+                                </li>
+                                <li>
+                                    <a href="user-setting.html" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-primary dark:hover:text-white"><i class="ri-settings-5-line text-[18px] font-normal me-2"></i>Settings</a>
+                                </li>
+                                <li class="border-t border-gray-100 dark:border-gray-800 my-2"></li>
+                                <li>
+                                    <a href="login.html" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-primary dark:hover:text-white"><i class="ri-login-circle-line text-[18px] font-normal me-2"></i>Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li><!--end dropdown-->
+                </ul>
+                <!--Login button End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu justify-end! nav-light">
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Home</a><span class="menu-arrow"></span>
+
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="index.html" class="sub-menu-item">
+                                                <div class="lg:text-center">
+                                                    <span class="none lg:block"><img src="assets/images/demos/air-fryer.png" class="img-fluid rounded shadow-md" alt=""></span>
+                                                    <span class="lg:mt-2 block">Air Fryer</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="index-refrigerator.html" class="sub-menu-item">
+                                                <div class="lg:text-center">
+                                                    <span class="none lg:block"><img src="assets/images/demos/refrigerator.png" class="img-fluid rounded shadow-md" alt=""></span>
+                                                    <span class="lg:mt-2 block">Refrigerator</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="index-vr-headset.html" class="sub-menu-item">
+                                                <div class="lg:text-center">
+                                                    <span class="none lg:block"><img src="assets/images/demos/vr-headset.png" class="img-fluid rounded shadow-md" alt=""></span>
+                                                    <span class="lg:mt-2 block">VR Headset</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+        
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="index-washing-machine.html" class="sub-menu-item">
+                                                <div class="lg:text-center">
+                                                    <span class="none lg:block"><img src="assets/images/demos/washing-machine.png" class="img-fluid rounded shadow-md" alt=""></span>
+                                                    <span class="lg:mt-2 block">Washing Machine</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+        
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="index-portable-speaker.html" class="sub-menu-item">
+                                                <div class="lg:text-center">
+                                                    <span class="none lg:block"><img src="assets/images/demos/portable-speaker.png" class="img-fluid rounded shadow-md" alt=""></span>
+                                                    <span class="lg:mt-2 block">Portable Speaker</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-parent-menu-item"><a href="javascript:void(0)"> Shop </a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="shop.html" class="sub-menu-item">Shop Items</a></li>
+                                <li><a href="shop-left-sidebar.html" class="sub-menu-item">Shop - Left Sidebar</a></li>
+                                <li><a href="shop-right-sidebar.html" class="sub-menu-item">Shop - Right Sidebar</a></li>
+
+                                <li class="has-submenu parent-menu-item">
+                                    <a href="javascript:void(0)"> Shop Detail </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="product-detail-one.html" class="sub-menu-item">Product Detail One</a></li>
+                                        <li><a href="product-detail-two.html" class="sub-menu-item">Product Detail Two</a></li>
+                                        <li><a href="product-detail-three.html" class="sub-menu-item">Product Detail Three</a></li>
+                                    </ul>  
+                                </li>
+                                <li><a href="shop-cart.html" class="sub-menu-item">Shop Cart</a></li>
+                                <li><a href="shop-checkout.html" class="sub-menu-item">Checkout</a></li>
+                                <li><a href="wishlists.html" class="sub-menu-item">Wishlists</a></li>
+                            </ul>
+                        </li>
+        
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>
+
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> My Account</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="user-account.html" class="sub-menu-item">User Account</a></li>
+                                        <li><a href="user-billing.html" class="sub-menu-item">Billing</a></li>
+                                        <li><a href="user-payment.html" class="sub-menu-item">Payment</a></li>
+                                        <li><a href="user-invoice.html" class="sub-menu-item">Invoice</a></li>
+                                        <li><a href="user-social.html" class="sub-menu-item">Social</a></li>
+                                        <li><a href="user-notification.html" class="sub-menu-item">Notification</a></li>
+                                        <li><a href="user-setting.html" class="sub-menu-item">Setting</a></li>
+                                    </ul> 
+                                </li>
+                
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Blogs </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="blogs.html" class="sub-menu-item"> Blogs</a></li>
+                                        <li><a href="blog-detail.html" class="sub-menu-item"> Blog Detail</a></li>
+                                    </ul> 
+                                </li>
+
+                                <li class="has-submenu parent-menu-item">
+                                    <a href="javascript:void(0)"> Helpcenter </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="helpcenter.html" class="sub-menu-item">Overview</a></li>
+                                        <li><a href="helpcenter-faqs.html" class="sub-menu-item">FAQs</a></li>
+                                        <li><a href="helpcenter-guides.html" class="sub-menu-item">Guides</a></li>
+                                        <li><a href="helpcenter-support.html" class="sub-menu-item">Support</a></li>
+                                    </ul>  
+                                </li>
+
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Auth Pages </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="login.html" class="sub-menu-item"> Login</a></li>
+                                        <li><a href="signup.html" class="sub-menu-item"> Signup</a></li>
+                                        <li><a href="forgot-password.html" class="sub-menu-item"> Forgot Password</a></li>
+                                        <li><a href="lock-screen.html" class="sub-menu-item"> Lock Screen</a></li>
+                                    </ul> 
+                                </li>
+
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Utility </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="terms.html" class="sub-menu-item">Terms of Services</a></li>
+                                        <li><a href="privacy.html" class="sub-menu-item">Privacy Policy</a></li>
+                                    </ul>  
+                                </li>
+
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Special </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="comingsoon.html" class="sub-menu-item"> Coming Soon</a></li>
+                                        <li><a href="maintenance.html" class="sub-menu-item"> Maintenance</a></li>
+                                        <li><a href="error.html" class="sub-menu-item"> 404!</a></li>
+                                    </ul> 
+                                </li>
+
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Multi Level Menu</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="javascript:void(0)" class="sub-menu-item">Level 1.0</a></li>
+                                        <li class="has-submenu child-menu-item"><a href="javascript:void(0)"> Level 2.0 </a><span class="submenu-arrow"></span>
+                                            <ul class="submenu">
+                                                <li><a href="javascript:void(0)" class="sub-menu-item">Level 2.1</a></li>
+                                                <li><a href="javascript:void(0)" class="sub-menu-item">Level 2.2</a></li>
+                                            </ul>  
+                                        </li>
+                                    </ul>  
+                                </li>
+                            </ul>
+                        </li>
+                
+                        <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </nav><!--end header-->
+        <!-- End Navbar -->
+
+        <!-- Searchbar modal -->
+        <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl m-auto mt-20">
+            <div class="relative w-full h-auto">
+                <form method="dialog" class="modal-backdrop">
+                    <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost"><i class="ri-close-line"></i></button>
+                </form>
+                <div class="p-6 text-center">
+                    <form class="relative">
+                        <i class="ri-search-line text-lg absolute top-2 end-0"></i>
+                        <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10" name="s" id="searchItem" placeholder="Search...">
+                    </form>
+                </div>
+            </div>
+        </dialog>
+        <!-- Searchbar modal -->
+        
+        <!-- Start Hero -->
+        <section class="relative table w-full items-center py-36 bg-[url('../../assets/images/bg/pages.html')] bg-center bg-no-repeat bg-cover">
+            <div class="absolute inset-0 bg-linear-to-b from-slate-900/60 via-slate-900/80 to-slate-900"></div>
+            <div class="container relative">
+                <div class="grid grid-cols-1 pb-6 text-center mt-10">
+                    <h3 class="mb-3 text-4xl leading-normal tracking-wider font-semibold text-white">About Us</h3>
+
+                    <p class="text-slate-400 text-lg max-w-xl mx-auto">Believe in Craftsmanship and Luxurious Design.</p>
+                </div><!--end grid-->
+            </div><!--end container-->
+            
+            <div class="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
+                <ul class="tracking-[0.5px] mb-0 inline-block">
+                    <li class="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white"><a href="index.html">Supero</a></li>
+                    <li class="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180"><i class="ri-arrow-right-s-fill"></i></li>
+                    <li class="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white" aria-current="page">About</li>
+                </ul>
+            </div>
+        </section><!--end section-->
+        <!-- End Hero -->
+
+        <!-- Start -->
+        <section class="relative md:py-24 py-16">
+            <div class="container relative">
+                <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-6">
+                    <div class="relative">
+                        <div class="relative">
+                            <img src="assets/images/ab1.jpg" class="mx-auto md:max-w-xs lg:max-w-sm rounded-lg shadow-md dark:shadow-gray-800" alt="">
+
+                            <div class="absolute top-4 md:end-14 -end-2 text-center">
+                                <a href="#!" data-type="youtube" data-id="S_CGed6E610"
+                                    class="lightbox size-20 rounded-full shadow-md dark:shadow-gyay-700 inline-flex items-center justify-center text-white bg-primary">
+                                    <i class="ri-play-fill inline-flex items-center justify-center text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="overflow-hidden absolute md:size-125 size-100 bg-linear-to-tr to-primary/20 via-primary/70 from-primary bottom-1/2 translate-y-1/2 md:end-0 end-1/2 md:translate-x-0 translate-x-1/2 -z-1 shadow-md shadow-primary/10 rounded-full"></div>
+
+                        <div class="absolute flex justify-between items-center bottom-16 md:-start-10 -start-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-64 m-3">
+                            <div class="flex items-center">
+                                <div class="flex items-center justify-center h-16.25 min-w-16.25 bg-primary/5 text-primary text-center rounded-full me-3">
+                                    <i class="ri-money-dollar-circle-line text-3xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h6 class="text-slate-400">Revenue</h6>
+                                    <p class="text-xl font-bold">$<span class="counter-value" data-target="45485">39548</span></p>
+                                </div>
+                            </div>
+
+                            <span class="text-green-600"><i class="ri-bar-chart-line "></i> 3.85%</span>
+                        </div>
+                    </div>
+
+                    <div class="lg:ms-6">
+                        <h6 class="text-primary font-semibold uppercase text-lg">Our Shop</h6>
+                        <h5 class="font-semibold text-3xl leading-normal my-4">Focusing on Quality <br> Material, Good Design</h5>
+                        <p class="text-slate-400 max-w-xl">Donec non interdum nisl. Sed ut est ac lacus sodales convallis. Nam non velit justo. Mauris vel ultrices tortor. Proin bibendum magna porttitor porttitor suscipit. Praesent sit amet consequat eros. Quisque ullamcorper ornare vulputate. Nam sodales sem id diam sollicitudin, id lobortis tellus tincidunt.</p>
+
+                        <div class="flex items-center mt-6">
+                            <i class="ri-phone-line text-2xl me-4"></i>
+                            <div class="">
+                                <h5 class="title font-bold mb-0">Phone</h5>
+                                <a href="tel:+152534-468-854" class="tracking-wide text-primary">+152 534-468-854</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center mt-6">
+                            <i class="ri-map-pin-line text-2xl me-4"></i>
+                            <div class="">
+                                <h5 class="title font-bold mb-0">Location</h5>
+                                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" data-type="iframe" class="tracking-wide text-center text-primary lightbox">View on Google map</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="container relative md:mt-24 mt-16">
+                <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-6">
+                    <div class="relative order-1 md:order-2">
+                        <img src="assets/images/ab2.jpg" class="mx-auto md:max-w-xs lg:max-w-sm rounded-lg shadow-md dark:shadow-gray-800" alt="">
+                        <div class="overflow-hidden absolute md:size-125 size-100 bg-linear-to-tl to-primary/20 via-primary/70 from-primary bottom-1/2 translate-y-1/2 md:start-0 start-1/2 ltr:md:translate-x-0 ltr:-translate-x-1/2 rtl:md:translate-x-0 rtl:translate-x-1/2 -z-1 shadow-md shadow-primary/10 rounded-full"></div>
+
+                        <div class="absolute bottom-1/2 translate-y-1/2 lg:-end-7 -end-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-52 m-3">
+                            <div class="flex">
+                                <div class="text-center min-w-18.75">
+                                    <span class="text-2xl font-semibold">4.90</span>
+                                    <ul class="list-none mb-0 text-amber-400 text-xs">
+                                        <li class="inline"><i class="mdi mdi-star"></i></li>
+                                        <li class="inline"><i class="mdi mdi-star"></i></li>
+                                        <li class="inline"><i class="mdi mdi-star"></i></li>
+                                        <li class="inline"><i class="mdi mdi-star"></i></li>
+                                        <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    </ul>
+                                    <span class="text-xs"><span class="font-semibold">950</span> <span class="text-slate-400">Ratings</span></span>
+                                </div>
+
+                                <span class="font-semibold ms-3">Trusted by over <span class="text-primary">50000</span> members</span>
+                            </div>
+                        </div>
+
+                        <div class="absolute flex justify-between items-center bottom-16 md:start-10 -start-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-56 m-3">
+                            <div class="flex items-center">
+                                <img src="assets/images/client/01.jpg" class="size-14 rounded-full shadow-md dark:shadow-gray-800 me-3" alt="">
+                                <div class="flex-1">
+                                    <h6 class="text-lg font-semibold">Advin</h6>
+                                    <p class="text-slate-400">Owner & CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:me-6 order-2 md:order-1">
+                        <h6 class="text-primary font-semibold uppercase text-lg">Founder</h6>
+                        <h5 class="font-semibold text-3xl leading-normal my-4">Maria J. Rose</h5>
+                        <p class="text-slate-400 max-w-xl">Donec non interdum nisl. Sed ut est ac lacus sodales convallis. Nam non velit justo. Mauris vel ultrices tortor. Proin bibendum magna porttitor porttitor suscipit. Praesent sit amet consequat eros. Quisque ullamcorper ornare vulputate. Nam sodales sem id diam sollicitudin, id lobortis tellus tincidunt.</p>
+
+                        <ul class="list-none mt-6 space-x-2">
+                            <li class="inline"><a href="https://dribbble.com/shreethemes" target="_blank" class="inline-flex hover:text-primary dark:hover:text-primary"><i class="ri-dribbble-line align-middle" title="dribbble"></i></a></li>
+                            <li class="inline"><a href="http://linkedin.com/company/shreethemes" target="_blank" class="inline-flex hover:text-primary dark:hover:text-primary"><i class="ri-linkedin-line align-middle" title="Linkedin"></i></a></li>
+                            <li class="inline"><a href="https://www.facebook.com/shreethemes" target="_blank" class="inline-flex hover:text-primary dark:hover:text-primary"><i class="ri-facebook-line align-middle" title="facebook"></i></a></li>
+                            <li class="inline"><a href="https://www.instagram.com/shreethemes/" target="_blank" class="inline-flex hover:text-primary dark:hover:text-primary"><i class="ri-instagram-line align-middle" title="instagram"></i></a></li>
+                            <li class="inline"><a href="https://twitter.com/shreethemes" target="_blank" class="inline-flex hover:text-primary dark:hover:text-primary"><i class="ri-twitter-x-line align-middle" title="twitter"></i></a></li>
+                        </ul><!--end icon-->
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="container relative md:mt-24 mt-16">
+                <div class="grid grid-cols-1 justify-center text-center mb-4">
+                    <h6 class="text-primary font-semibold uppercase text-lg">Our Promise</h6>
+                    <h5 class="font-semibold text-3xl leading-normal my-4">We Designed and <br> Developed Products</h5>
+                </div><!--end grid-->
+
+                <div class="grid md:grid-cols-3 grid-cols-1 mt-6 gap-6">
+                    <!-- Content -->
+                    <div class="p-6 shadow-sm hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 duration-500 rounded-md bg-white dark:bg-slate-900">
+                        <i class="ri-truck-line text-4xl text-primary"></i>
+
+                        <div class="content mt-6">
+                            <a href="#" class="title h5 text-xl font-medium hover:text-primary">Free Shipping</a>
+                            <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>
+                            
+                            <div class="mt-4">
+                                <a href="#" class="text-primary">Read More <i class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content -->
+
+                    <!-- Content -->
+                    <div class="p-6 shadow-sm hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 duration-500 rounded-md bg-white dark:bg-slate-900">
+                        <i class="ri-24-hours-line text-4xl text-primary"></i>
+
+                        <div class="content mt-6">
+                            <a href="#" class="title h5 text-xl font-medium hover:text-primary">24/7 Support</a>
+                            <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>
+                            
+                            <div class="mt-4">
+                                <a href="#" class="text-primary">Read More <i class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content -->
+
+                    <!-- Content -->
+                    <div class="p-6 shadow-sm hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 duration-500 rounded-md bg-white dark:bg-slate-900">
+                        <i class="ri-currency-line text-4xl text-primary"></i>
+
+                        <div class="content mt-6">
+                            <a href="#" class="title h5 text-xl font-medium hover:text-primary">Payment Process</a>
+                            <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>
+                            
+                            <div class="mt-4">
+                                <a href="#" class="text-primary">Read More <i class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+            </div><!--end container-->
+
+            <div class="container relative md:mt-24 mt-16">
+                <div class="grid grid-cols-1 justify-center text-center mb-4">
+                    <h6 class="text-primary font-semibold uppercase text-lg">Our Minds</h6>
+                    <h5 class="font-semibold text-3xl leading-normal my-4">Meet Our Team Members</h5>
+                </div><!--end grid-->
+
+                <div class="grid md:grid-cols-12 grid-cols-1 mt-6 gap-6">
+                    <div class="lg:col-span-3 md:col-span-6">
+                        <div class="group text-center">
+                            <div class="relative inline-block mx-auto size-52 rounded-full overflow-hidden">
+                                <img src="assets/images/client/04.jpg" class="" alt="">
+                                <div class="absolute inset-0 bg-linear-to-b from-transparent to-black size-52 rounded-full opacity-0 group-hover:opacity-100 duration-500"></div>
+
+                                <ul class="list-none absolute start-0 end-0 -bottom-20 group-hover:bottom-5 duration-500">
+                                    <li class="inline"><a href="#" class="size-8 inline-flex items-center justify-center align-middle rounded-full bg-primary text-white"><i class="ri-facebook-circle-line"></i></a></li>
+                                    <li class="inline"><a href="#" class="size-8 inline-flex items-center justify-center align-middle rounded-full bg-primary text-white"><i class="ri-instagram-line"></i></a></li>
+                                    <li class="inline"><a href="#" class="size-8 inline-flex items-center justify-center align-middle rounded-full bg-primary text-white"><i class="ri-linkedin-line"></i></a></li>
+                                </ul><!--end icon-->
+                            </div>
+
+                            <div class="content mt-3">
+                                <a href="#" class="text-lg font-semibold hover:text-primary duration-500">Jack John</a>
+                                <p class="text-slate-400">Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-3 md:col-span-6">
+                        <div class="group text-center">
+                            <div class="relative inline-block mx-auto size-52 rounded-full overflow-hidden">
+                                <img src="assets/images/client/16.jpg" class="" alt="">
+                                <div class="absolute inset-0 bg-linear-to-b from-transparent to-black size-52 rounded-full opacity-0 group-hover:opacity-100 duration-500"></div>
+
+                                <ul class="list-none absolute start-0 end-0 -bottom-20 group-hover:bottom-5 duration-500">
+                                    <li class="inline"><a href="#" class="size-8 inline-flex items-center justify-center align-middle rounded-full bg-primary text-white"><i class="ri-facebook-circle-line"></i></a></li>
+                                    <li class="inline"><a href="#" class="size-8 inline-flex items-center justify-center align-middle rounded-full bg-primary text-white"><i class="ri-instagram-line"></i></a></li>
+                                    <li class="inline"><a href="#" class="size-8 inline-flex items-center justify-center align-middle rounded-full bg-primary text-white"><i class="ri-linkedin-line"></i></a></li>
+                                </ul><!--end icon-->
+                            </div>
+
+                            <div class="content mt-3">
+                                <a href="#" class="text-lg font-semibold hover:text-primary duration-500">Krista John</a>
+                                <p class="text-slate-400">Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-3 md:col-span-6">
+                        <div class="group text-center">
+                            <div class="relative inline-block mx-auto size-52 rounded-full overflow-hidden">
+                                <img src="assets/images/client/06.jpg" class="" alt="">
+                                <div class="absolute inset-0 bg-linear-to-b from-transparent to-black size-52 rounded-full opacity-0 group-hover:opacity-100 duration-500"></div>
+
+                                <ul class="list-none absolute start-0 end-0 -bottom-20 group-hover:bottom-5 duration-500">
+                                    <li class="inline"><a href="#" class="size-8 inline-flex items-center justify-center align-middle rounded-full bg-primary text-white"><i class="ri-facebook-circle-line"></i></a></li>
+                                    <li class="inline"><a href="#" class="size-8 inline-flex items-center justify-center align-middle rounded-full bg-primary text-white"><i class="ri-instagram-line"></i></a></li>
+                                    <li class="inline"><a href="#" class="size-8 inline-flex items-center justify-center align-middle rounded-full bg-primary text-white"><i class="ri-linkedin-line"></i></a></li>
+                                </ul><!--end icon-->
+                            </div>
+
+                            <div class="content mt-3">
+                                <a href="#" class="text-lg font-semibold hover:text-primary duration-500">Roger Jackson</a>
+                                <p class="text-slate-400">Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-3 md:col-span-6">
+                        <div class="group text-center">
+                            <div class="relative inline-block mx-auto size-52 rounded-full overflow-hidden">
+                                <img src="assets/images/client/07.jpg" class="" alt="">
+                                <div class="absolute inset-0 bg-linear-to-b from-transparent to-black size-52 rounded-full opacity-0 group-hover:opacity-100 duration-500"></div>
+
+                                <ul class="list-none absolute start-0 end-0 -bottom-20 group-hover:bottom-5 duration-500">
+                                    <li class="inline"><a href="#" class="size-8 inline-flex items-center justify-center align-middle rounded-full bg-primary text-white"><i class="ri-facebook-circle-line"></i></a></li>
+                                    <li class="inline"><a href="#" class="size-8 inline-flex items-center justify-center align-middle rounded-full bg-primary text-white"><i class="ri-instagram-line"></i></a></li>
+                                    <li class="inline"><a href="#" class="size-8 inline-flex items-center justify-center align-middle rounded-full bg-primary text-white"><i class="ri-linkedin-line"></i></a></li>
+                                </ul><!--end icon-->
+                            </div>
+
+                            <div class="content mt-3">
+                                <a href="#" class="text-lg font-semibold hover:text-primary duration-500">Johnny English</a>
+                                <p class="text-slate-400">Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Start Footer -->
+        <footer class="relative bg-slate-900 dark:bg-slate-800">
+            <div class="container relative">
+                <div class="grid grid-cols-1">
+                    <div class="relative py-16">
+                        <!-- Subscribe -->
+                        <div class="relative w-full">
+                            <div class="md:flex justify-between">
+                                <div class="lg:w-2/6 md:w-1/2">
+                                    <a href="#" class="text-[22px] focus:outline-none">
+                                        <img src="assets/images/logo-light.png" alt="">
+                                    </a>
+                                    <p class="mt-6 text-gray-300">Supero is a really creative & modern product landing page template built with tailwind css.</p>
+
+                                    <ul class="list-none mt-6">
+                                        <li class="inline"><a href="https://1.envato.market/supero" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-shopping-cart-2-line"></i></a></li>
+                                        <li class="inline"><a href="https://dribbble.com/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-dribbble-line"></i></a></li>
+                                        <li class="inline"><a href="https://www.behance.net/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-behance-line"></i></a></li>
+                                        <li class="inline"><a href="http://linkedin.com/company/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-linkedin-line"></i></a></li>
+                                        <li class="inline"><a href="https://www.facebook.com/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-facebook-circle-line"></i></a></li>
+                                        <li class="inline"><a href="https://www.instagram.com/shreethemes/" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-instagram-line"></i></a></li>
+                                        <li class="inline"><a href="https://twitter.com/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-twitter-x-line"></i></a></li>
+                                        <li class="inline"><a href="mailto:support@shreethemes.in" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-mail-line"></i></a></li>
+                                    </ul><!--end icon-->
+                                </div><!--end col-->
+                        
+                                <div class="lg:w-2/6 md:w-1/2 w-full">
+                                    <div class="grid grid-cols-2 md:mt-0 mt-6 gap-6">
+                                        <div class="">
+                                            <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Services</h5>
+                                    
+                                            <ul class="list-none footer-list mt-6">
+                                                <li><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Installation</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Maintenance</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">System Design</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Energy Consulting</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Financing</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Feasibility Analysis</a></li>
+                                            </ul>
+                                        </div><!--end col-->
+                                
+                                        <div class="">
+                                            <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Company</h5>
+
+                                            <ul class="list-none footer-list mt-6">
+                                                <li><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">About Us</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Services</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Projects</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Blogs</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Team</a></li>
+                                                <li class="mt-2.5"><i class="ri-arrow-right-s-line text-gray-400 me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">FAQs</a></li>
+                                            </ul>
+                                        </div><!--end col-->
+                                    </div>
+                                </div>
+                            </div><!--end grid-->
+                        </div>
+                        <!-- Subscribe -->
+                    </div>
+                </div>
+            </div><!--end container-->
+
+            <div class="py-7.5 px-0 border-t border-gray-800 dark:border-gray-700">
+                <div class="container relative text-center">
+                    <div class="grid md:grid-cols-2 items-center gap-6">
+                        <div class="md:text-start text-center">
+                            <p class="mb-0 text-gray-300">© <script>document.write(new Date().getFullYear())</script> Supero. Design with <i class="ri-heart-fill text-red-600"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                        </div>
+
+                        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top rounded-md z-10 size-8 bg-primary text-white flex justify-center items-center md:ms-auto md:mx-0 mx-auto"><i class="ri-arrow-up-line"></i></a>
+                    </div><!--end grid-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- End Footer -->
+        <!-- Switcher -->
+        <div class="fixed top-1/4 -right-2 z-3">
+            <span class="relative inline-block rotate-90">
+                <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
+                <label class="label bg-slate-900 dark:bg-white shadow-sm dark:shadow-gray-700 cursor-pointer rounded-full flex justify-between items-center p-1 w-15 h-8" for="chk">
+                    <i class="ri-moon-line text-yellow-500 ps-1 relative z-1"></i>
+                    <i class="ri-sun-line text-yellow-500 pe-1 relative z-1"></i>
+                    <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-0.5 left-0.5 size-7"></span>
+                </label>
+            </span>
+        </div>
+        <!-- Switcher -->
+
+        <!-- LTR & RTL Mode Code -->
+        <div class="fixed top-[40%] -right-3 z-50">
+            <a href="#" id="switchRtl">
+                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-sm shadow-gray-800 dark:shadow-gray-200 font-semibold rtl:block ltr:hidden" >LTR</span>
+                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-sm shadow-gray-800 dark:shadow-gray-200 font-semibold ltr:block rtl:hidden">RTL</span>
+            </a>
+        </div>
+        <!-- LTR & RTL Mode Code --> 
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 end-5 size-8 text-center bg-primary text-white justify-center items-center"><i class="ri-arrow-up-s-fill"></i></a>
+        <!-- Back to top -->
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/tobii/js/tobii.min.js"></script>
+        <script src="assets/libs/feather-icons/feather.min.html"></script>
+        <script src="assets/libs/wow.js/wow.min.html"></script>
+        <script src="assets/js/plugins.init.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!-- JAVASCRIPTS -->
+    </body>
+
+<!-- Mirrored from shreethemes.in/supero/layouts/aboutus.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Feb 2026 07:36:59 GMT -->
+</html>
